@@ -47,8 +47,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload dist folder from client
-          path: './client/dist'
+          # Upload dist/public folder (Vite build output)
+          path: './dist/public'
       
   # Deployment job
   deploy:
